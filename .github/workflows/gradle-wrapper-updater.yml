@@ -17,4 +17,4 @@ jobs:
       - uses: gradle-update/update-gradle-wrapper-action@0407394b9d173dfc9cf5695f9f560fef6d61a5fe # v1.0.20
         with:
           set-distribution-checksum: false
-      - uses: gradle/wrapper-validation-action@85cde3f5a1033b2adc2442631c24b530f1183a1a # v2.1.0
+      - uses: gradle/wrapper-validation-action@699bb18358f12c5b78b37bb0111d3a0e2276e0e2 # v2.1.1
