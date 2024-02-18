@@ -13,6 +13,12 @@ concurrency:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # sync with gradle/libs.versions.toml
+        agp: [ 8.2.2, 8.3.0-rc02, 8.4.0-alpha10 ]
+      fail-fast: false
+    name: "AGP ${{ matrix.agp }}"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
@@ -24,4 +30,4 @@ jobs:
           gradle-home-cache-cleanup: true
           add-job-summary-as-pr-comment: on-failure
       - uses: gradle/wrapper-validation-action@v2
-      - run: ./gradlew build --continue
+      - run: ./gradlew -Pagp=${{ matrix.agp }} build --continue

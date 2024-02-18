@@ -17,6 +17,14 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+    versionCatalogs {
+        maybeCreate("libs").apply {
+            providers.gradleProperty("agp").orNull?.let { agp ->
+                logger.lifecycle("🚨 Overriding AGP version: $agp")
+                version("agp", agp)
+            }
+        }
+    }
 }
 
 rootProject.name = "Android-TestFixtures"
