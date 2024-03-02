@@ -16,7 +16,7 @@ jobs:
     strategy:
       matrix:
         # sync with gradle/libs.versions.toml
-        agp: [ 8.3.0, 8.4.0-alpha10 ]
+        agp: [ 8.3.0, 8.4.0-alpha12 ]
       fail-fast: false
     name: "AGP ${{ matrix.agp }}"
     steps:
