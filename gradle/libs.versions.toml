@@ -7,7 +7,7 @@ junit = "junit:junit:4.13.2"
 
 # Fake agp libraries to detect new versions
 gradle-8_3 = { module = "com.android.tools.build:gradle", version = "8.3.0" }
-gradle-8_4 = { module = "com.android.tools.build:gradle", version = "8.4.0-alpha10" }
+gradle-8_4 = { module = "com.android.tools.build:gradle", version = "8.4.0-alpha12" }
 gradle-8_5 = { module = "com.android.tools.build:gradle", version = "8.5.0-alpha01" }
 
 [plugins]
