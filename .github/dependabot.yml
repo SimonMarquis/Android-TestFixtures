@@ -5,6 +5,16 @@ updates:
     schedule:
       interval: "daily"
     registries: "*"
+    groups:
+      agp-major:
+        patterns: [ com.android.application, com.android.library ]
+        update-types: [ major ]
+      agp-minor:
+        patterns: [ com.android.application, com.android.library ]
+        update-types: [ minor ]
+      agp-patch:
+        patterns: [ com.android.application, com.android.library ]
+        update-types: [ patch ]
 registries:
   maven-google:
     type: "maven-repository"
