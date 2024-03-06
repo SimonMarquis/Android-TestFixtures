@@ -5,6 +5,8 @@ updates:
     schedule:
       interval: "daily"
     registries: "*"
+    allow:
+      - dependency-type: "all"
     groups:
       agp-major:
         patterns: [ com.android.application, com.android.library ]
