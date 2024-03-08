@@ -19,7 +19,7 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         maybeCreate("libs").apply {
-            providers.gradleProperty("agp").orNull?.let { agp ->
+            providers.gradleProperty("agp").orNull?.ifEmpty { null }?.let { agp ->
                 logger.lifecycle("🚨 Overriding AGP version: $agp")
                 version("agp", agp)
             }
