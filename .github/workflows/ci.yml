@@ -15,8 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        # sync with gradle/libs.versions.toml
-        agp: [ 8.3.0, '' ]
+        agp: [ 8.3.1, '' ]
       fail-fast: false
     name: "AGP ${{ matrix.agp || 'default' }}"
     steps:
