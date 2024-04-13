@@ -28,5 +28,5 @@ jobs:
         with:
           gradle-home-cache-cleanup: true
           add-job-summary-as-pr-comment: on-failure
-      - uses: gradle/wrapper-validation-action@v2
+      - uses: gradle/actions/wrapper-validation-action@v2
       - run: ./gradlew -Pagp=${{ matrix.agp }} build --continue
