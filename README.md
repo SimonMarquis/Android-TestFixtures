@@ -2,8 +2,9 @@
 
 > [!TIP]
 > [AGP versions on Google's Maven repository](https://maven.google.com/web/index.html?q=com.android.tools.build#com.android.tools.build:gradle)  
-> [![Gradle 8.3](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fmaven.google.com%2Fcom%2Fandroid%2Ftools%2Fbuild%2Fgradle%2Fmaven-metadata.xml&label=%20&versionPrefix=8.3)](https://maven.google.com/web/index.html?q=com.android.application#com.android.tools.build:gradle)
-> [![Gradle 8.4](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fmaven.google.com%2Fcom%2Fandroid%2Ftools%2Fbuild%2Fgradle%2Fmaven-metadata.xml&label=%20&versionPrefix=8.4)](https://maven.google.com/web/index.html?q=com.android.application#com.android.tools.build:gradle)
+> [![AGP 8.3](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fmaven.google.com%2Fcom%2Fandroid%2Ftools%2Fbuild%2Fgradle%2Fmaven-metadata.xml&label=%20&versionPrefix=8.3)](https://maven.google.com/web/index.html?q=com.android.application#com.android.tools.build:gradle)
+> [![AGP 8.4](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fmaven.google.com%2Fcom%2Fandroid%2Ftools%2Fbuild%2Fgradle%2Fmaven-metadata.xml&label=%20&versionPrefix=8.4)](https://maven.google.com/web/index.html?q=com.android.application#com.android.tools.build:gradle)
+> [![AGP 8.5](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Fmaven.google.com%2Fcom%2Fandroid%2Ftools%2Fbuild%2Fgradle%2Fmaven-metadata.xml&label=%20&versionPrefix=8.5)](https://maven.google.com/web/index.html?q=com.android.application#com.android.tools.build:gradle)
 
 > [!CAUTION]
 > ```bash
