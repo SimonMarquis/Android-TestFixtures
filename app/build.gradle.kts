@@ -33,4 +33,6 @@ dependencies {
     testImplementation(testFixtures(project(":android-library")))
     testImplementation(testFixtures(project(":java-library")))
     testImplementation(testFixtures(project(":kotlin-library")))
+
+    testFixturesRuntimeOnly(libs.stdlib)
 }

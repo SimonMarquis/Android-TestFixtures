@@ -4,6 +4,7 @@ kotlin = "1.9.24"
 
 [libraries]
 junit = "junit:junit:4.13.2"
+stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin"}
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
