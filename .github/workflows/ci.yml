@@ -11,14 +11,20 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  configure-agp-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: set-matrix
+        run: echo "matrix=$(grep --perl-regexp --only-matching 'gha-agp-\w+\s*=\s*\K.+' gradle/libs.versions.toml | jq --null-input --compact-output '[inputs | sub(".+:"; "")] | {agp:.}')" >> "$GITHUB_OUTPUT"
+
   ci:
     runs-on: ubuntu-latest
+    needs: configure-agp-matrix
     strategy:
-      matrix:
-        agp:
-          - "" # default
-          - 8.5.0-beta02
-          - 8.6.0-alpha03
+      matrix: ${{ fromJson(needs.configure-agp-matrix.outputs.matrix) }}
       fail-fast: false
     name: "AGP ${{ matrix.agp || 'default' }}"
     steps:
