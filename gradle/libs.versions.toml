@@ -7,11 +7,11 @@ junit = "junit:junit:4.13.2"
 stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin"}
 
 #noinspection SimilarGradleDependency
-gha-agp-stable = "com.android.tools.build:gradle:8.4.1"
+gha-agp-stable = "com.android.tools.build:gradle:8.4.2"
 #noinspection SimilarGradleDependency
-gha-agp-beta = "com.android.tools.build:gradle:8.5.0-beta02"
+gha-agp-beta = "com.android.tools.build:gradle:8.4.2"
 #noinspection SimilarGradleDependency
-gha-agp-alpha = "com.android.tools.build:gradle:8.6.0-alpha03"
+gha-agp-alpha = "com.android.tools.build:gradle:8.4.2"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
